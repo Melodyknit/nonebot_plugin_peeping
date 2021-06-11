@@ -6,10 +6,10 @@ from typing import Union
 main_url = "http://melodyknit.club:8000/peeping"
 xml = """
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<msg templateID="123" url="https://b23.tv/oiRTsX?share_medium=android&amp;amp;share_source=qq&amp;amp;bbid=XYBA221BF994E1CAEA46F23FD7E2444BEF25D&amp;amp;ts=1623409431481" serviceID="1" action="web" actionData="" a_actionData="" i_actionData="" brief="&#91;QQ小程序&#93;哔哩哔哩" flag="0">
+<msg templateID="123" url="https://space.bilibili.com/255857194" serviceID="1" action="web" actionData="" a_actionData="" i_actionData="" brief="&#91;QQ小程序&#93;哔哩哔哩" flag="0">
     <item layout="2"><picture cover="{url}"/>
-        <title>哔哩哔哩</title>
-        <summary>诺艾拉的16秒可爱挑战，小萝莉什么的最棒了！！！</summary>
+        <title>暗中观察</title>
+        <summary>看看哪个小可爱还在玩...</summary>
     </item>
     <source url="{url}" icon="{url}" name="哔哩哔哩" appid="0" action="web" actionData="" a_actionData="tencent0://" i_actionData=""/>
 </msg>
