@@ -3,18 +3,17 @@ from asyncio import sleep
 from json import loads
 from typing import Union
 
+main_url = "http://melodyknit.club:8000/peeping"
 xml = """
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<msg serviceID="146" templateID="1" action="web" brief="暗中观察" sourceMsgId="0" url="https://jq.qq.com/?_wv=1027&k=WxWt4kW9" flag="0" adverSign="0" multiMsgFlag="0">
-    <item layout="2" advertiser_id="0" aid="0">
-        <picture cover="{url}" w="0" h="0" />
-        <title>暗中观察</title>
-        <summary>暗中观察</summary>
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<msg templateID="123" url="https://b23.tv/oiRTsX?share_medium=android&amp;amp;share_source=qq&amp;amp;bbid=XYBA221BF994E1CAEA46F23FD7E2444BEF25D&amp;amp;ts=1623409431481" serviceID="1" action="web" actionData="" a_actionData="" i_actionData="" brief="&#91;QQ小程序&#93;哔哩哔哩" flag="0">
+    <item layout="2"><picture cover="{url}"/>
+        <title>哔哩哔哩</title>
+        <summary>诺艾拉的16秒可爱挑战，小萝莉什么的最棒了！！！</summary>
     </item>
-    <source name="暗中观察" icon="" action="app" appid="-1" />
+    <source url="{url}" icon="{url}" name="哔哩哔哩" appid="0" action="web" actionData="" a_actionData="tencent0://" i_actionData=""/>
 </msg>
 """
-main_url = "http://melodyknit.club:8000/peeping"
 
 
 class Peeping:
@@ -34,7 +33,7 @@ class Peeping:
         self.img_url += str(self.uid)
         return self
 
-    def get_xml(self) -> str:
+    async def get_xml(self) -> str:
         return self._xml.format(url=self.img_url)
 
     @staticmethod
