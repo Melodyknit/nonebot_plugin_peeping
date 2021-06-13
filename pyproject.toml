@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nonebot_plugin_peeping"
+version = "0.1.0"
+description = "qqbot peeping plugin"
+authors = ["Melodyknit <2711402357@qq.com>"]
+homepage = "https://github.com/Melodyknit/nonebot_plugin_peeping"
+repository = "https://github.com/Melodyknit/nonebot_plugin_peeping"
+
+[tool.poetry.dependencies]
+python = "3.8"
+aiohttp = "^3.7.4"
+nonebot2 = "^2.0.0-alpha.11"
+nonebot-adapter-cqhttp = "^2.0.0a13"
+nonebot-plugin-apscheduler = "^0.1.2"
+
+[tool.poetry.dev-dependencies]
+nb-cli = "^0.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

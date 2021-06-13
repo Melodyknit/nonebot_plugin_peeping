@@ -43,7 +43,7 @@ class Peeping:
                 f"所在地：{info['referer']}\n"
                 f"设备：{info['ua']}")
 
-    async def get_data(self) -> dict:
+    async def get_data(self) -> list[dict]:
         await sleep(self.interval - 1)
         return await self._get(main_url, params={"uid": self.uid})
 
