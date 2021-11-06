@@ -4,16 +4,8 @@ from json import loads
 from typing import Union
 
 main_url = "http://melodyknit.club:8000/peeping"
-xml = """
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<msg templateID="123" url="https://space.bilibili.com/255857194" serviceID="1" action="web" actionData="" a_actionData="" i_actionData="" brief="&#91;QQ小程序&#93;哔哩哔哩" flag="0">
-    <item layout="2"><picture cover="{url}"/>
-        <title>暗中观察</title>
-        <summary>看看哪个小可爱还在玩...</summary>
-    </item>
-    <source url="{url}" icon="{url}" name="哔哩哔哩" appid="0" action="web" actionData="" a_actionData="tencent0://" i_actionData=""/>
-</msg>
-"""
+xml = """<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><msg serviceID="1" templateID="12345" action="web" brief="这个视频很nb" sourceMsgId="0" url="https://b23.tv/T4eA6C" flag="0" adverSign="0" multiMsgFlag="0"><item layout="2" advertiser_id="0" aid="0"><picture cover="{url}" w="0" h="0" /><title>我爱死这个视频了</title><summary>这简直是视觉盛宴！！！</summary></item><source name="" icon="" action="" appid="0" /></msg>"""
+
 
 
 class Peeping:
